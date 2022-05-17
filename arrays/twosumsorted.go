@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func twosum(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
 	low := 0
 	high := len(nums) - 1
 	for low < high {
@@ -23,5 +23,5 @@ func twosum(nums []int, target int) []int {
 func main() {
 	arr := []int{2, 7, 11, 15}
 	target := 9
-	fmt.Println(twosum(arr, target))
+	fmt.Println(twoSum(arr, target))
 }
