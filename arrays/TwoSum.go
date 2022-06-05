@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func findtwosum(nums []int, target int) []int {
+func findTwoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for index, num := range nums {
 		if v, found := m[target-num]; found {
@@ -12,12 +12,11 @@ func findtwosum(nums []int, target int) []int {
 	}
 	return nil
 }
-
 func main() {
 	nums := []int{2, 7, 11, 15}
 	result := []int{}
 	target := 9
-	result = findtwosum(nums, target)
+	result = findTwoSum(nums, target)
 	fmt.Println(result)
 
 }
